@@ -1,11 +1,161 @@
-:root { color-scheme: light dark; --bg: #0b0f14; --fg: #e6edf3; --muted: #9aa7b4; --accent: #5ee0c0; }
-@media (prefers-color-scheme: light) { :root { --bg: #f7f7f5; --fg: #1b1f24; --muted: #5c6670; --accent: #0f8f74; } }
-body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-main { max-width: 720px; margin: 0 auto; padding: 48px 20px 64px; }
-h1 { font-size: 2rem; margin: 0 0 8px; }
-h2 { font-size: 1.25rem; margin: 32px 0 8px; }
-p, li { color: var(--fg); }
-.muted { color: var(--muted); }
+:root {
+  color-scheme: dark;
+  --bg: #070b10;
+  --bg-2: #0d141c;
+  --card: rgba(255, 255, 255, 0.04);
+  --card-border: rgba(255, 255, 255, 0.08);
+  --fg: #e8eef4;
+  --muted: #8d9aa8;
+  --accent: #5ee0c0;
+  --accent-2: #7aa7ff;
+  --radius: 20px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--fg);
+  font: 17px/1.65 -apple-system, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background:
+    radial-gradient(900px 500px at 15% -10%, rgba(94, 224, 192, 0.16), transparent 60%),
+    radial-gradient(700px 400px at 100% 0%, rgba(122, 167, 255, 0.12), transparent 60%),
+    linear-gradient(180deg, var(--bg-2), var(--bg) 40%);
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 72px; }
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 56px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.01em;
+  color: var(--fg);
+  text-decoration: none;
+}
+
+.logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 11px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  box-shadow: 0 8px 24px rgba(94, 224, 192, 0.25);
+  position: relative;
+}
+
+.logo::after {
+  content: "";
+  position: absolute;
+  inset: 11px;
+  border-radius: 50%;
+  border: 3px solid rgba(7, 11, 16, 0.85);
+}
+
+nav { display: flex; gap: 6px; flex-wrap: wrap; }
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  transition: background 0.15s, color 0.15s;
+}
+
+nav a:hover, nav a[aria-current="page"] {
+  background: var(--card);
+  color: var(--fg);
+}
+
+h1 {
+  font-size: clamp(2.2rem, 6vw, 3.2rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin: 0 0 12px;
+}
+
+.lead { font-size: 1.2rem; color: var(--muted); margin: 0 0 36px; }
+
+h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  margin: 40px 0 12px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+  margin: 0 0 16px;
+}
+
+.card h2 { margin-top: 0; }
+
+.card p:last-child, .card ul:last-child { margin-bottom: 0; }
+
+p { margin: 0 0 14px; }
+
+ul { padding-left: 20px; margin: 0 0 14px; }
+
+li { margin: 6px 0; }
+
+li strong { color: var(--fg); }
+
 a { color: var(--accent); }
-nav a { margin-right: 16px; }
-footer { margin-top: 48px; color: var(--muted); font-size: 0.9rem; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.tile {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 18px 20px;
+}
+
+.tile b { display: block; font-size: 1.05rem; margin-bottom: 4px; }
+
+.tile span { color: var(--muted); font-size: 0.95rem; }
+
+.pill {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgba(94, 224, 192, 0.12);
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.muted { color: var(--muted); }
+
+footer {
+  margin-top: 56px;
+  padding-top: 20px;
+  border-top: 1px solid var(--card-border);
+  color: var(--muted);
+  font-size: 0.9rem;
+}

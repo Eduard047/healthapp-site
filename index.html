@@ -3,27 +3,50 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#070b10">
 <title>HealthApp</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="wrap">
+<header>
+  <a class="brand" href="index.html"><span class="logo"></span>HealthApp</a>
+  <nav>
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+  </nav>
+</header>
+
 <main>
-<nav><a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
-<h1>HealthApp</h1>
-<p class="muted">A personal recovery dashboard for Android.</p>
-<p>HealthApp combines data from your Oura Ring and Garmin devices into one view: sleep, readiness, heart rate variability, resting heart rate, training load and recovery. All processing happens on your phone.</p>
-<h2>What it does</h2>
-<ul>
-<li>Reads your Oura data through the official Oura API after you sign in with your Oura account.</li>
-<li>Reads data from Health Connect and Garmin when you connect them.</li>
-<li>Computes daily recovery and health status scores locally.</li>
-<li>Lets you add your own tags, workouts, weight and notes.</li>
-</ul>
-<h2>Status</h2>
-<p>HealthApp is in private development and is not yet published on Google Play.</p>
-<h2>Contact</h2>
-<p>Questions about the app: <a href="mailto:martynenkoeduard1@gmail.com">martynenkoeduard1@gmail.com</a></p>
-<footer>HealthApp is an independent project and is not affiliated with Oura Health Oy or Garmin Ltd.</footer>
+<span class="pill">Android · in development</span>
+<h1>One recovery dashboard for Oura and Garmin.</h1>
+<p class="lead">HealthApp brings sleep, readiness, heart rate variability, resting heart rate and training load from your ring and your watch into one calm, private view. All scores are computed on your phone.</p>
+
+<div class="grid">
+  <div class="tile"><b>Oura Ring</b><span>Sleep, readiness, HRV, SpO2, stress and tags through the official Oura API.</span></div>
+  <div class="tile"><b>Garmin</b><span>Training status, load, VO2max, activities and Body Battery.</span></div>
+  <div class="tile"><b>Health Connect</b><span>Steps, heart rate, sleep and workouts from other apps on your phone.</span></div>
+  <div class="tile"><b>Your own notes</b><span>Tags, manual workouts, weight, goals and symptoms.</span></div>
+</div>
+
+<div class="card">
+  <h2>Private by design</h2>
+  <p>Your data lives in a local database on your device and access tokens are stored encrypted. Cloud sync is optional: create an account only if you want backup and several devices. No advertising, no analytics. Read the <a href="privacy.html">privacy policy</a>.</p>
+</div>
+
+<div class="card">
+  <h2>Status</h2>
+  <p>HealthApp is in private development and is not yet published on Google Play.</p>
+</div>
+
+<div class="card">
+  <h2>Contact</h2>
+  <p><a href="mailto:martynenkoeduard1@gmail.com">martynenkoeduard1@gmail.com</a></p>
+</div>
 </main>
+
+<footer>HealthApp is an independent project and is not affiliated with Oura Health Oy, Garmin Ltd. or Google LLC.</footer>
+</div>
 </body>
 </html>
