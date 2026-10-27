@@ -186,7 +186,7 @@ a { color: var(--accent); text-underline-offset: 0.2em; text-decoration-thicknes
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
   gap: 0.875rem;
   margin-bottom: 2.25rem;
 }
