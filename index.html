@@ -5,19 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#070b10">
 <title>HealthApp</title>
-<link rel="stylesheet" href="style.css?v=5">
+<meta name="description" content="HealthApp is an Android app that brings Oura, Garmin and Health Connect data into one private recovery dashboard.">
+<link rel="alternate" hreflang="en" href="index.html">
+<link rel="alternate" hreflang="ru" href="index.ru.html">
+<link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
 <div class="wrap">
 <header>
   <a class="brand" href="index.html"><span class="logo"></span>HealthApp</a>
-  <nav>
+  <nav aria-label="Main">
     <a href="index.html" aria-current="page">Home</a>
     <a href="privacy.html">Privacy</a>
     <a href="terms.html">Terms</a>
+    <a href="delete-account.html">Delete account</a>
   </nav>
+  <div class="lang" role="group" aria-label="Language"><span lang="en" aria-current="true">EN</span><a href="index.ru.html" lang="ru" hreflang="ru" title="Русская версия">RU</a></div>
 </header>
-
 <main>
 <span class="pill">Android · in development</span>
 <h1>One recovery dashboard for Oura and Garmin.</h1>
@@ -32,7 +36,7 @@
 
 <div class="card">
   <h2>Private by design</h2>
-  <p>Your data lives in a local database on your device and access tokens are stored encrypted. Cloud sync is optional: create an account only if you want backup and several devices. No advertising, no analytics. Read the <a href="privacy.html">privacy policy</a>.</p>
+  <p>Your data lives in an encrypted local database on your device, and access tokens are stored encrypted. Oura, Garmin and Health Connect data, and every score computed from it, never leave your phone. Cloud sync is optional: if you create an account, only the entries you type yourself (weight, blood pressure, food, mood, your own workouts, goals and similar) are backed up, on servers in the EU. No advertising, no analytics. Read the <a href="privacy.html">privacy policy</a>, or see how to <a href="delete-account.html">delete your account and data</a>.</p>
 </div>
 
 <div class="card">
@@ -45,8 +49,7 @@
   <p><a href="mailto:martynenkoeduard1@gmail.com">martynenkoeduard1@gmail.com</a></p>
 </div>
 </main>
-
-<footer><span>© 2026 HealthApp</span><span>Not affiliated with Oura Health Oy, Garmin Ltd. or Google LLC.</span></footer>
+<footer><span>© 2026 HealthApp</span><span>Not affiliated with Oura Health Oy, Garmin Ltd. or Google LLC.</span><p class="links"><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="delete-account.html">Delete account</a></p></footer>
 </div>
 </body>
 </html>

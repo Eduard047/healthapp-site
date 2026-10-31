@@ -5,57 +5,139 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#070b10">
 <title>Privacy Policy – HealthApp</title>
-<link rel="stylesheet" href="style.css?v=5">
+<meta name="description" content="How HealthApp handles your data: what stays on your phone, what is optionally synced, and how to delete it.">
+<link rel="alternate" hreflang="en" href="privacy.html">
+<link rel="alternate" hreflang="ru" href="privacy.ru.html">
+<link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
 <div class="wrap">
 <header>
   <a class="brand" href="index.html"><span class="logo"></span>HealthApp</a>
-  <nav>
+  <nav aria-label="Main">
     <a href="index.html">Home</a>
     <a href="privacy.html" aria-current="page">Privacy</a>
     <a href="terms.html">Terms</a>
+    <a href="delete-account.html">Delete account</a>
   </nav>
+  <div class="lang" role="group" aria-label="Language"><span lang="en" aria-current="true">EN</span><a href="privacy.ru.html" lang="ru" hreflang="ru" title="Русская версия">RU</a></div>
 </header>
 <main>
 <div class="page-head"><h1>Privacy Policy</h1>
-<p class="muted">Last updated: 27 October 2026</p></div>
+<p class="muted">Last updated: 31 October 2026</p></div>
 
 <div class="card"><h2>Summary</h2>
-<p>HealthApp stores your health data on your own device. If you choose to create an account, the app can additionally back up and sync your data to HealthApp's cloud storage so you can use it on several devices. HealthApp does not sell your data and does not share it with third parties for advertising or analytics.</p></div>
-<div class="card"><h2>What data the app processes</h2>
+<p>HealthApp is an Android app by Eduard Martynenko (sole developer, the data controller) that shows data from your Oura Ring, your Garmin watch and Health Connect in one recovery dashboard.</p>
 <ul>
-<li><strong>Oura data</strong> – sleep, readiness, activity, heart rate, SpO2, stress, workouts, tags and basic profile information (age, height, weight, biological sex), read through the official Oura API after you sign in with your Oura account.</li>
-<li><strong>Health Connect data</strong> – steps, heart rate, sleep sessions, weight, SpO2 and exercise sessions, read only after you grant the corresponding Health Connect permissions.</li>
-<li><strong>Garmin data</strong> – daily summaries, heart rate, training status and activities, when you connect a Garmin account.</li>
-<li><strong>Data you enter</strong> – tags, notes, manual workouts, weight, goals and profile settings.</li>
+<li><strong>Device data stays on your phone.</strong> Data from Oura, Garmin and Health Connect, and every score the app computes from it (recovery, Body Battery, stress and so on), is never uploaded to HealthApp or to any other server.</li>
+<li><strong>Cloud sync is optional and narrow.</strong> Only if you create an account, the entries you type yourself (listed below) are backed up to your private cloud account.</li>
+<li><strong>No advertising, no analytics, no crash-reporting services, no sale of data.</strong></li>
 </ul></div>
-<div class="card"><h2>Where the data is stored</h2>
-<p>By default all data is stored in a local database on your phone, protected by the Android app sandbox. Access tokens for Oura and Garmin are stored encrypted on the device and are never uploaded.</p></div>
-<div class="card"><h2>Optional account and cloud sync</h2>
-<p>You can use HealthApp without an account. If you create one, the app syncs your health data and settings to HealthApp's cloud storage, hosted on Supabase in the European Union, so that your data is backed up and available on your other devices. Data is encrypted in transit, stored under your account only, and used solely to provide sync and backup. You can turn sync off or delete your account and all cloud data from the app settings at any time; deletion removes the cloud copy.</p></div>
-<div class="card"><h2>How the data is used</h2>
-<p>The app uses the data only to show it to you and to compute scores such as recovery, health status and training load on the device. Raw responses from the Oura API are not stored; only the values needed for the app's features are kept.</p></div>
+
+<div class="card"><h2>Data the app processes</h2>
+<p><strong>Device and service data.</strong> Read-only, from the services you connect, and kept in the app's local database on your phone:</p>
+<ul>
+<li><strong>Oura</strong> – sleep, readiness, activity, heart rate and heart rate variability, SpO2, stress, resilience, workouts, sessions, tags, ring battery and basic profile details (age, height, weight, sex), read through the official Oura API after you sign in to your Oura account.</li>
+<li><strong>Garmin</strong> – daily summaries (steps, floors, calories, distance), heart rate, training status and load, VO2 max, activities with their routes, hydration, weight and device status, read from Garmin Connect after you sign in to your Garmin account.</li>
+<li><strong>Health Connect</strong> – the record types listed in the Health Connect section below.</li>
+</ul>
+<p><strong>Records you enter yourself.</strong> Weight and body composition, blood pressure, water, food diary, mood check-ins and symptoms, tags, breathing and meditation sessions, medication and supplement intakes, manual workouts, goals, event goals, gear, notification rules, and your profile and settings.</p>
+<p><strong>Computed data.</strong> Scores, trends, streaks and records that the app calculates on your phone from the data above. They are derived on the device and are never uploaded.</p>
+<p><strong>Account data (optional).</strong> If you create an account: your email address and the sign-in session. There is no password; you sign in with a one-time code sent to your email.</p>
+<p>The app has no location permission, does not read your contacts and does not use advertising identifiers.</p></div>
+
+<div class="card"><h2>Where data is stored and what leaves the device</h2>
+<p>On your phone, data is kept in a local database encrypted with SQLCipher. Without an account, the only network traffic is between the app and the services you connect (Oura, Garmin).</p>
+<p><strong>Never leaves your device:</strong></p>
+<ul>
+<li>All data from Oura, Garmin and Health Connect.</li>
+<li>All computed data: scores, Body Battery, stress, training load, trends, streaks and records.</li>
+<li>Your Oura and Garmin sign-in tokens.</li>
+<li>Your Today screen layout, dashboards, the assignment of gear to workouts, rest mode and the jet-lag trip planner.</li>
+</ul>
+<p><strong>Synced to the cloud only if you create an account.</strong> These entries, and nothing else, are copied to your private cloud account so they are backed up and available on a second phone:</p>
+<ul>
+<li>Weight and body-composition measurements you enter.</li>
+<li>Blood pressure entries (with pulse, arm, posture and notes).</li>
+<li>Water and drink entries.</li>
+<li>Food diary entries and your saved foods.</li>
+<li>Mood check-ins (mood, energy, stress, notes) and symptoms (name, severity, temperature, notes).</li>
+<li>Tag entries and your custom tag types.</li>
+<li>Breathing and meditation sessions you run in the app (pattern, planned and actual duration, cycles, average breathing rate, mood before and after). These sessions contain no heart-rate values.</li>
+<li>Medication and supplement entries (name, dose, side effects, notes). This is health information; it is synced only if you create an account and log such entries.</li>
+<li>Manual workouts you add yourself (type, time, duration, distance, and the average heart rate and effort rating you typed in). Workouts that come from Oura, Garmin or Health Connect are not synced, and GPS routes are never synced.</li>
+<li>Goals, event goals (events and races you train for: name, date, sport, distance, target time and notes), gear (shoes, bikes) and notification rules.</li>
+<li>Settings and profile fields: units, birth date, sex, height, heart-rate overrides, FTP, quiet hours, daily notification limit and source order.</li>
+</ul>
+<p>The cloud is a Supabase project in the EU (region eu-west-3, Paris). Row Level Security means each account can read and change only its own rows, and data is encrypted in transit with TLS.</p></div>
+
+<div class="card"><h2>Health Connect</h2>
+<p>HealthApp reads data from Health Connect on your Android phone. It requests read permissions only and never writes to Health Connect. You choose which permissions to grant in the Health Connect dialog.</p>
+<p><strong>Record types read:</strong></p>
+<ul>
+<li>Steps</li>
+<li>Heart rate</li>
+<li>Sleep</li>
+<li>Exercise sessions</li>
+<li>Weight</li>
+<li>Oxygen saturation (SpO2)</li>
+<li>Distance</li>
+<li>Total calories burned</li>
+<li>Floors climbed</li>
+<li>Body fat</li>
+<li>Bone mass</li>
+</ul>
+<p>Two optional permissions can be granted in addition: reading data older than 30 days (history), and reading in the background so the dashboard stays up to date while the app is closed.</p>
+<p><strong>Purpose.</strong> The data is used only to show it to you and to compute sleep, recovery, activity and training-load figures inside the app.</p>
+<p><strong>Limits on use.</strong> Health Connect data is processed on your device only. It is not uploaded to HealthApp's cloud, not transferred or disclosed to any third party, not used for advertising (including personalised or interest-based ads), not sold, and not used for any purpose other than the features described here. HealthApp's use and transfer of information received from Health Connect adheres to the Google Play User Data policy, including the Limited Use requirements.</p>
+<p><strong>Your control.</strong> You can review and revoke any permission at any time in Health Connect (Settings, Apps, HealthApp), and reads stop at once. To remove copies already held by the app, use <span lang="ru">«Очистить кэш устройств»</span> (Clear device cache) in Settings, <span lang="ru">«Данные и приватность»</span> (Data and privacy). Deleting your HealthApp account does not touch Health Connect.</p></div>
+
+<div class="card"><h2>Security</h2>
+<ul>
+<li>The local database is encrypted with SQLCipher. Its key is protected by the Android Keystore.</li>
+<li>Oura and Garmin tokens are kept in an encrypted vault backed by the Android Keystore, and are never written to logs.</li>
+<li>Android's automatic cloud backup and device-to-device transfer are turned off for the app's data.</li>
+<li>All network traffic uses HTTPS (TLS); unencrypted connections are blocked.</li>
+<li>Garmin sign-in happens on Garmin's own sign-in page shown inside the app. You type your Garmin email and password into that page; the app does not read or store the password. Only the resulting tokens are stored, encrypted. Garmin's page may keep its own session cookie in the app's private storage until you disconnect Garmin.</li>
+<li>Oura sign-in uses OAuth in a browser tab; the app never sees your Oura password.</li>
+<li>In the cloud, every table is protected by Row Level Security. The app holds only a public client key and no administrative credentials; the account-deletion function acts only on the account of the verified sign-in token.</li>
+</ul>
+<p>No system is perfectly secure, but these measures are designed to keep your health data under your control.</p></div>
+
 <div class="card"><h2>Third parties</h2>
 <ul>
-<li><strong>Oura</strong> – the app connects to the Oura API on your behalf. Oura's own <a href="https://ouraring.com/privacy-policy">privacy policy</a> applies to your Oura account.</li>
-<li><strong>Google Health Connect</strong> – data is read from Health Connect on your device. It is uploaded only if you enable cloud sync with your own account.</li>
-<li><strong>Garmin</strong> – the app signs in to Garmin Connect with your credentials to read your data. Garmin's <a href="https://www.garmin.com/en-US/privacy/global/">privacy policy</a> applies to your Garmin account.</li>
-<li><strong>Supabase</strong> – the hosting provider for the optional cloud sync. Supabase processes the data on HealthApp's behalf under its <a href="https://supabase.com/privacy">privacy policy</a>; it has no independent use of your data.</li>
+<li><strong>Oura</strong> (Oura Health Oy) – the app connects to the Oura API on your behalf after you authorise it. Oura's <a href="https://ouraring.com/privacy-policy">privacy policy</a> applies to your Oura account.</li>
+<li><strong>Garmin</strong> (Garmin Ltd.) – the app reads your data from Garmin Connect after you sign in. Garmin's <a href="https://www.garmin.com/en-US/privacy/global/">privacy policy</a> applies to your Garmin account.</li>
+<li><strong>Google Health Connect</strong> – data is read on your device from the Health Connect service built into Android. It is not sent to Google by HealthApp. Google's <a href="https://policies.google.com/privacy">privacy policy</a> applies to Health Connect itself.</li>
+<li><strong>Supabase</strong> – hosts the optional cloud database and account system (EU region, Paris) as HealthApp's processor, under its <a href="https://supabase.com/privacy">privacy policy</a>. It has no independent use of your data.</li>
+<li><strong>Resend</strong> – delivers the sign-in code emails for optional accounts. It receives only your email address and the message containing the code, under its <a href="https://resend.com/legal/privacy-policy">privacy policy</a>.</li>
 </ul>
-<p>The app does not use advertising or analytics SDKs.</p></div>
-<div class="card"><h2>Sharing and export</h2>
-<p>You can export your data (PDF reports, GPX tracks, a full data export) from the app. Exported files go only where you send them with the Android share sheet.</p></div>
-<div class="card"><h2>Deleting your data</h2>
-<p>You can disconnect Oura, Health Connect or Garmin at any time in the app settings; this deletes the stored tokens. "Delete all data" in the settings removes the local database and, if you have an account, the cloud copy as well. Uninstalling the app removes everything the app stored on the device. To revoke the app's access to your Oura account, use the Oura account settings.</p></div>
+<p>No data is shared with anyone for advertising or analytics. HealthApp does not sell your data.</p></div>
+
+<div class="card"><h2>Retention and deletion</h2>
+<ul>
+<li><strong>On your phone</strong> data is kept until you delete it or uninstall the app. Uninstalling removes everything the app stored on the device.</li>
+<li><strong>Delete all my data</strong> (<span lang="ru">«Удалить все мои данные»</span> in Settings, <span lang="ru">«Данные и приватность»</span>) deletes the entries stored on the device and, while an account is linked, the cloud copy as well.</li>
+<li><strong>Delete account</strong> (<span lang="ru">«Удалить аккаунт»</span> in Account and cloud sync) deletes your login and all your cloud rows at once. You can also request deletion by email. Full steps are on the <a href="delete-account.html">Delete your account and data</a> page.</li>
+<li><strong>Disconnecting</strong> Oura or Garmin in Settings, <span lang="ru">«Устройства и источники»</span> (Devices and sources) deletes the stored tokens. To also revoke access on the provider's side, use your Oura or Garmin account settings. Health Connect permissions are revoked in Health Connect.</li>
+<li><strong>Deletion markers.</strong> When you delete a synced entry, the cloud keeps a small marker (table name and entry ID, no content) so your other devices delete it too. A daily job purges markers after 180&nbsp;days; account deletion removes them immediately.</li>
+<li><strong>Provider copies.</strong> Supabase may keep infrastructure backups for a limited time under its own policy, and Resend keeps delivery records of sign-in emails under its own policy.</li>
+</ul></div>
+
+<div class="card"><h2>Your rights</h2>
+<p>You can access your data at any time: the app exports your entries as JSON or CSV, workouts as GPX, and reports as PDF. You can correct or delete any entry in the app, delete your cloud copy or account as described above, and withdraw consent by disconnecting a source, revoking a permission or deleting your account.</p>
+<p>If you are in the EU, EEA or UK you also have the rights of access, rectification, erasure, restriction, portability and objection under the GDPR, and the right to complain to your local data protection authority. To use any of these rights, email <a href="mailto:martynenkoeduard1@gmail.com">martynenkoeduard1@gmail.com</a>; I will reply within 30&nbsp;days.</p></div>
+
 <div class="card"><h2>Children</h2>
-<p>HealthApp is not intended for children under 16.</p></div>
+<p>HealthApp is not intended for children under 16 and does not knowingly collect data from them. If you believe a child has created an account, contact me and the account will be deleted.</p></div>
+
 <div class="card"><h2>Changes</h2>
 <p>If this policy changes, the new version will be published on this page with an updated date.</p></div>
+
 <div class="card"><h2>Contact</h2>
-<p><a href="mailto:martynenkoeduard1@gmail.com">martynenkoeduard1@gmail.com</a></p></div>
+<p>Eduard Martynenko, developer of HealthApp<br><a href="mailto:martynenkoeduard1@gmail.com">martynenkoeduard1@gmail.com</a></p></div>
 </main>
-<footer><span>© 2026 HealthApp</span><span>Not affiliated with Oura Health Oy, Garmin Ltd. or Google LLC.</span></footer>
+<footer><span>© 2026 HealthApp</span><span>Not affiliated with Oura Health Oy, Garmin Ltd. or Google LLC.</span><p class="links"><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="delete-account.html">Delete account</a></p></footer>
 </div>
 </body>
 </html>

@@ -248,3 +248,47 @@ footer {
 @media (prefers-contrast: more) {
   :root { --line: rgba(255, 255, 255, 0.25); --fg-2: #d5dde6; --muted: #a4b0bc; }
 }
+
+/* Language switch, wrapping header, numbered steps, footer links, Cyrillic headings */
+header { flex-wrap: wrap; row-gap: 0.5rem; }
+
+nav { flex-wrap: wrap; }
+
+.lang {
+  display: flex;
+  gap: 0.125rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.lang a, .lang span {
+  padding: 0.3rem 0.55rem;
+  border-radius: 999px;
+  color: var(--fg-2);
+  text-decoration: none;
+}
+
+.lang [aria-current] {
+  color: var(--fg);
+  background: var(--surface-strong);
+}
+
+ol { padding-left: 1.4rem; margin: 0 0 0.875rem; }
+
+footer .links { flex-basis: 100%; margin: 0; }
+
+footer .links a { color: var(--fg-2); }
+
+:lang(ru) h2 { text-transform: none; letter-spacing: 0; font-size: 0.9375rem; }
+
+:lang(ru) h1 { letter-spacing: -0.02em; }
+
+:lang(ru) .card p, :lang(ru) .card li { hyphens: auto; -webkit-hyphens: auto; }
+
+@media (max-width: 36rem) {
+  .lang { order: 2; }
+  nav { order: 3; flex-basis: 100%; }
+}
+
+.word { hyphens: none; -webkit-hyphens: none; white-space: nowrap; }
