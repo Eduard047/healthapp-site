@@ -26,8 +26,16 @@
 <div class="page-head"><h1>Delete your account and data</h1>
 <p class="muted">App: HealthApp for Android and iPhone · Developer: Eduard Martynenko · Last updated: 9 November 2026</p></div>
 
-<div class="card"><h2>Delete your account in the app</h2>
-<p>HealthApp accounts are optional. If you created one, you can delete it from the app at any time, on Android and on iPhone. The steps are the same on both. The app follows your phone's language (Russian, English or Ukrainian); the English labels are shown first, with the Russian ones in brackets.</p>
+<div class="card"><h2>iPhone: there is no account to delete</h2>
+<p>The iPhone version of HealthApp has no account, no sign-up and no cloud sync. The optional account exists only in the Android app for now. On iPhone nothing leaves your device except the Oura sign-in, which uses Oura's own OAuth, so there is no cloud copy to delete. Your data is removed in one of two ways:</p>
+<ol>
+<li>In the app, open Settings with the gear icon at the top of the Today screen, open <strong>Data and privacy</strong> (<span lang="ru">«Данные и приватность»</span>), tap <strong>Delete all my data</strong> (<span lang="ru">«Удалить все мои данные»</span>) and confirm.</li>
+<li>Or delete the app from your iPhone. This removes everything the app stored on the device.</li>
+</ol>
+<p>To also remove what other services hold, disconnect Oura in Settings (this deletes the token stored on your phone) and revoke access in your Oura account; manage Apple Health data in the Health app.</p></div>
+
+<div class="card"><h2>Android: delete your account in the app</h2>
+<p>HealthApp accounts are optional and exist only in the Android app for now. If you created one on Android, you can delete it from the app at any time. The app follows your phone's language (Russian, English or Ukrainian); the English labels are shown first, with the Russian ones in brackets.</p>
 <ol>
 <li>Open HealthApp and tap the gear icon at the top of the Today screen to open Settings.</li>
 <li>Open <strong>Account and cloud</strong> (<span lang="ru">«Аккаунт и облако»</span>).</li>
@@ -52,7 +60,7 @@
 
 <div class="card"><h2>What is not deleted</h2>
 <ul>
-<li>Data on your phone. Deleting the account keeps the local data. Remove it with <strong>Delete all my data</strong> (<span lang="ru">«Удалить все мои данные»</span>) in Settings, <strong>Data and privacy</strong> (<span lang="ru">«Данные и приватность»</span>), or by uninstalling the app.</li>
+<li>Data on your phone. Deleting the account keeps the local data. On Android remove it with <strong>Delete all my data</strong> (<span lang="ru">«Удалить все мои данные»</span>) in Settings, <strong>Data and privacy</strong> (<span lang="ru">«Данные и приватность»</span>), or by uninstalling the app.</li>
 <li>Data held by Oura, Garmin, Health Connect and Apple Health. These services are separate from HealthApp: manage that data in your Oura account, your Garmin account, Health Connect (Android) and the Health app (iPhone). HealthApp only reads from Health Connect and Apple Health and never writes to them, so deleting your account does not change them. Disconnecting a source in the app deletes the tokens stored on your phone.</li>
 <li>Files you exported yourself.</li>
 <li>Backups and delivery logs that Supabase and Resend may keep for a limited time under their own policies.</li>

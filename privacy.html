@@ -32,9 +32,12 @@
 <ul>
 <li><strong>Device data stays on your phone.</strong> Data from Oura, Garmin, Health Connect and Apple Health, and every score the app computes from it (recovery, Body Battery, stress and so on), is never uploaded to HealthApp or to any other server.</li>
 <li><strong>Apple Health is read-only.</strong> On iPhone, HealthApp only reads from Apple Health and never writes to it. Apple Health data is not sent to the cloud, not stored in iCloud, not shared with third parties and not used for advertising.</li>
-<li><strong>Cloud sync is optional and narrow.</strong> Only if you create an account, the entries you type yourself (listed below) are backed up to your private cloud account.</li>
+<li><strong>Cloud sync is optional, narrow and Android only for now.</strong> Only if you create an account in the Android app, the entries you type yourself (listed below) are backed up to your private cloud account. The iPhone version has no account and no cloud sync: nothing leaves the device except the Oura sign-in through Oura's own OAuth.</li>
 <li><strong>No advertising, no analytics, no crash-reporting services, no sale of data.</strong></li>
 </ul></div>
+
+<div class="card"><h2>Account and cloud sync: Android only for now</h2>
+<p>The optional account and the optional cloud sync described below exist <strong>only in the Android app for now</strong>. The iPhone version has <strong>no account, no sign-in, no sign-up, no cloud sync and no cloud backup</strong>. On iPhone, everything stays on the device: Apple Health data, Oura data, every calculated score and every entry you type. Nothing leaves the phone except the Oura sign-in, which uses Oura's own OAuth, so the app never sees your Oura password. Wherever this page mentions an account, a cloud copy, Supabase or Resend, it describes the Android app.</p></div>
 
 <div class="card"><h2>Data the app processes</h2>
 <p><strong>Device and service data.</strong> Read-only, from the services you connect, and kept in the app's local database on your phone:</p>
@@ -46,11 +49,11 @@
 </ul>
 <p><strong>Records you enter yourself.</strong> Weight and body composition, blood pressure, water, food diary, mood check-ins and symptoms, tags, breathing and meditation sessions, medication and supplement intakes, manual workouts, goals, event goals, gear, notification rules, and your profile and settings.</p>
 <p><strong>Computed data.</strong> Scores, trends, streaks and records that the app calculates on your phone from the data above. They are derived on the device and are never uploaded.</p>
-<p><strong>Account data (optional).</strong> If you create an account: your email address and the sign-in session. There is no password; you sign in with a one-time code sent to your email.</p>
+<p><strong>Account data (optional, Android only for now).</strong> If you create an account in the Android app: your email address and the sign-in session. There is no password; you sign in with a one-time code sent to your email.</p>
 <p>The app has no location permission, does not read your contacts and does not use advertising identifiers.</p></div>
 
 <div class="card"><h2>Where data is stored and what leaves the device</h2>
-<p>On your phone, data is kept in a local database. On Android it is encrypted with SQLCipher; on iPhone the database file is protected by iOS Data Protection and excluded from backups, including iCloud backup. Without an account, the only network traffic is between the app and the services you connect (Oura, and Garmin on Android).</p>
+<p>On your phone, data is kept in a local database. On Android it is encrypted with SQLCipher; on iPhone the database file is protected by iOS Data Protection and excluded from backups, including iCloud backup. Without an account, the only network traffic is between the app and the services you connect (Oura, and Garmin on Android). The iPhone version has no account, so this is always the case there.</p>
 <p><strong>Never leaves your device:</strong></p>
 <ul>
 <li>All data from Oura, Garmin, Health Connect and Apple Health.</li>
@@ -58,7 +61,7 @@
 <li>Your Oura and Garmin sign-in tokens.</li>
 <li>Your Today screen layout, dashboards, the assignment of gear to workouts, rest mode and the jet-lag trip planner.</li>
 </ul>
-<p><strong>Synced to the cloud only if you create an account.</strong> These entries, and nothing else, are copied to your private cloud account so they are backed up and available on a second phone:</p>
+<p><strong>Synced to the cloud only if you create an account (Android app only for now).</strong> These entries, and nothing else, are copied to your private cloud account so they are backed up and available on a second phone:</p>
 <ul>
 <li>Weight and body-composition measurements you enter.</li>
 <li>Blood pressure entries (with pulse, arm, posture and notes).</li>
@@ -136,16 +139,16 @@
 <li><strong>Garmin</strong> (Garmin Ltd.) – on Android the app reads your data from Garmin Connect after you sign in. On iPhone the app has no connection to Garmin's servers: Garmin data arrives only through Apple Health. Garmin's <a href="https://www.garmin.com/en-US/privacy/global/">privacy policy</a> applies to your Garmin account.</li>
 <li><strong>Google Health Connect</strong> – data is read on your device from the Health Connect service built into Android. It is not sent to Google by HealthApp. Google's <a href="https://policies.google.com/privacy">privacy policy</a> applies to Health Connect itself.</li>
 <li><strong>Apple Health</strong> (Apple Inc.) – on iPhone, data is read on your device from Apple Health, which is built into iOS. It is not sent to Apple by HealthApp. Apple's <a href="https://www.apple.com/legal/privacy/">privacy policy</a> applies to Apple Health itself.</li>
-<li><strong>Supabase</strong> – hosts the optional cloud database and account system (EU region, Paris) as HealthApp's processor, under its <a href="https://supabase.com/privacy">privacy policy</a>. It has no independent use of your data.</li>
-<li><strong>Resend</strong> – delivers the sign-in code emails for optional accounts. It receives only your email address and the message containing the code, under its <a href="https://resend.com/legal/privacy-policy">privacy policy</a>.</li>
+<li><strong>Supabase</strong> – hosts the optional cloud database and account system of the Android app (EU region, Paris) as HealthApp's processor, under its <a href="https://supabase.com/privacy">privacy policy</a>. It has no independent use of your data.</li>
+<li><strong>Resend</strong> – delivers the sign-in code emails for optional accounts in the Android app. It receives only your email address and the message containing the code, under its <a href="https://resend.com/legal/privacy-policy">privacy policy</a>.</li>
 </ul>
 <p>No data is shared with anyone for advertising or analytics. HealthApp does not sell your data.</p></div>
 
 <div class="card"><h2>Retention and deletion</h2>
 <ul>
 <li><strong>On your phone</strong> data is kept until you delete it or uninstall the app. Uninstalling removes everything the app stored on the device.</li>
-<li><strong>Delete all my data</strong> (<span lang="ru">«Удалить все мои данные»</span> in Settings, <span lang="ru">«Данные и приватность»</span>) deletes the entries stored on the device and, while an account is linked, the cloud copy as well.</li>
-<li><strong>Delete account</strong> (<span lang="ru">«Удалить аккаунт»</span> in Account and cloud sync) deletes your login and all your cloud rows at once. You can also request deletion by email. Full steps are on the <a href="delete-account.html">Delete your account and data</a> page.</li>
+<li><strong>Delete all my data</strong> (<span lang="ru">«Удалить все мои данные»</span> in Settings, <span lang="ru">«Данные и приватность»</span>) deletes the entries stored on the device and, while an account is linked (Android only), the cloud copy as well. On iPhone there is no cloud copy, so this removes everything the app holds.</li>
+<li><strong>Delete account</strong> (Android only; <span lang="ru">«Удалить аккаунт»</span> in Account and cloud sync) deletes your login and all your cloud rows at once. The iPhone version has no account to delete. You can also request deletion by email. Full steps are on the <a href="delete-account.html">Delete your account and data</a> page.</li>
 <li><strong>Disconnecting</strong> Oura or Garmin in Settings, <span lang="ru">«Устройства и источники»</span> (Devices and sources) deletes the stored tokens. To also revoke access on the provider's side, use your Oura or Garmin account settings. Health Connect permissions are revoked in Health Connect, and Apple Health access in the Health app or in iOS Settings.</li>
 <li><strong>Deletion markers.</strong> When you delete a synced entry, the cloud keeps a small marker (table name and entry ID, no content) so your other devices delete it too. A daily job purges markers after 180&nbsp;days; account deletion removes them immediately.</li>
 <li><strong>Provider copies.</strong> Supabase may keep infrastructure backups for a limited time under its own policy, and Resend keeps delivery records of sign-in emails under its own policy.</li>
