@@ -280,11 +280,11 @@ footer .links { flex-basis: 100%; margin: 0; }
 
 footer .links a { color: var(--fg-2); }
 
-:lang(ru) h2 { text-transform: none; letter-spacing: 0; font-size: 0.9375rem; }
+:lang(ru) h2, :lang(uk) h2 { text-transform: none; letter-spacing: 0; font-size: 0.9375rem; }
 
-:lang(ru) h1 { letter-spacing: -0.02em; }
+:lang(ru) h1, :lang(uk) h1 { letter-spacing: -0.02em; }
 
-:lang(ru) .card p, :lang(ru) .card li { hyphens: auto; -webkit-hyphens: auto; }
+:lang(ru) .card p, :lang(ru) .card li, :lang(uk) .card p, :lang(uk) .card li { hyphens: auto; -webkit-hyphens: auto; }
 
 @media (max-width: 36rem) {
   .lang { order: 2; }

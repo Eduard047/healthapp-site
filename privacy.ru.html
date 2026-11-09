@@ -5,10 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#070b10">
 <title>Политика конфиденциальности – HealthApp</title>
-<meta name="description" content="Как HealthApp обращается с вашими данными: что остаётся на телефоне, что синхронизируется по желанию и как всё удалить.">
+<meta name="description" content="Как HealthApp обращается с вашими данными на Android и iPhone: что остаётся на телефоне, что синхронизируется по желанию и как всё удалить.">
 <link rel="alternate" hreflang="en" href="privacy.html">
 <link rel="alternate" hreflang="ru" href="privacy.ru.html">
-<link rel="stylesheet" href="style.css?v=6">
+<link rel="alternate" hreflang="uk" href="privacy.uk.html">
+<link rel="stylesheet" href="style.css?v=7">
 </head>
 <body>
 <div class="wrap">
@@ -20,16 +21,17 @@
     <a href="terms.ru.html">Условия</a>
     <a href="delete-account.ru.html">Удаление аккаунта</a>
   </nav>
-  <div class="lang" role="group" aria-label="Язык"><a href="privacy.html" lang="en" hreflang="en" title="English version">EN</a><span lang="ru" aria-current="true">RU</span></div>
+  <div class="lang" role="group" aria-label="Язык"><a href="privacy.html" lang="en" hreflang="en" title="English version">EN</a><span lang="ru" aria-current="true">RU</span><a href="privacy.uk.html" lang="uk" hreflang="uk" title="Українська версія">UK</a></div>
 </header>
 <main>
 <div class="page-head"><h1>Политика конфиденциальности</h1>
-<p class="muted">Обновлено: 31&nbsp;октября 2026</p></div>
+<p class="muted">Обновлено: 9&nbsp;ноября 2026</p></div>
 
 <div class="card"><h2>Кратко</h2>
-<p>HealthApp&nbsp;— приложение для&nbsp;Android от&nbsp;Эдуарда Мартыненко (единственный разработчик и&nbsp;оператор данных). Оно показывает данные вашего кольца Oura, часов Garmin и&nbsp;Health Connect в&nbsp;одной панели восстановления.</p>
+<p>HealthApp&nbsp;— приложение для&nbsp;Android и&nbsp;iPhone от&nbsp;Эдуарда Мартыненко (единственный разработчик и&nbsp;оператор данных). Оно показывает данные вашего кольца Oura, часов Garmin, Health Connect (Android) и&nbsp;Apple Health (iPhone) в&nbsp;одной панели восстановления.</p>
 <ul>
-<li><strong>Данные устройств остаются на&nbsp;телефоне.</strong> Данные Oura, Garmin и&nbsp;Health Connect и&nbsp;все показатели, которые приложение из&nbsp;них рассчитывает (восстановление, Body Battery, стресс и&nbsp;так далее), никогда не&nbsp;загружаются ни&nbsp;в&nbsp;HealthApp, ни&nbsp;на&nbsp;какой-либо другой сервер.</li>
+<li><strong>Данные устройств остаются на&nbsp;телефоне.</strong> Данные Oura, Garmin, Health Connect и&nbsp;Apple Health и&nbsp;все показатели, которые приложение из&nbsp;них рассчитывает (восстановление, Body Battery, стресс и&nbsp;так далее), никогда не&nbsp;загружаются ни&nbsp;в&nbsp;HealthApp, ни&nbsp;на&nbsp;какой-либо другой сервер.</li>
+<li><strong>Apple Health только для&nbsp;чтения.</strong> На&nbsp;iPhone HealthApp только читает из&nbsp;Apple Health и&nbsp;ничего туда не&nbsp;записывает. Данные Apple Health не&nbsp;отправляются в&nbsp;облако, не&nbsp;хранятся в&nbsp;iCloud, не&nbsp;передаются третьим лицам и&nbsp;не&nbsp;используются для&nbsp;рекламы.</li>
 <li><strong>Облачная синхронизация необязательна и&nbsp;узка по&nbsp;объёму.</strong> Только если вы&nbsp;создадите аккаунт, записи, которые вы&nbsp;вводите сами (перечислены ниже), сохраняются в&nbsp;вашем личном облачном аккаунте.</li>
 <li><strong>Без&nbsp;рекламы, без&nbsp;аналитики, без&nbsp;сервисов отчётов о&nbsp;сбоях, без&nbsp;продажи данных.</strong></li>
 </ul></div>
@@ -38,8 +40,9 @@
 <p><strong>Данные устройств и&nbsp;сервисов.</strong> Только чтение, из&nbsp;сервисов, которые вы&nbsp;подключили; хранятся в&nbsp;локальной базе приложения на&nbsp;вашем телефоне:</p>
 <ul>
 <li><strong>Oura</strong>&nbsp;— сон, готовность, активность, пульс и&nbsp;вариабельность пульса, SpO2, стресс, устойчивость, тренировки, сессии, теги, заряд кольца и&nbsp;базовые данные профиля (возраст, рост, вес, пол); читаются через официальный API Oura после входа в&nbsp;ваш аккаунт Oura.</li>
-<li><strong>Garmin</strong>&nbsp;— дневные сводки (шаги, этажи, калории, дистанция), пульс, статус и&nbsp;нагрузка тренировок, VO2 max, активности с&nbsp;маршрутами, гидратация, вес и&nbsp;состояние устройства; читаются из&nbsp;Garmin Connect после входа в&nbsp;ваш аккаунт Garmin.</li>
-<li><strong>Health Connect</strong>&nbsp;— типы записей, перечисленные в&nbsp;разделе о&nbsp;Health Connect ниже.</li>
+<li><strong>Garmin</strong>&nbsp;— на&nbsp;Android: дневные сводки (шаги, этажи, калории, дистанция), пульс, статус и&nbsp;нагрузка тренировок, VO2 max, активности с&nbsp;маршрутами, гидратация, вес и&nbsp;состояние устройства; читаются из&nbsp;Garmin Connect после входа в&nbsp;ваш аккаунт Garmin. На&nbsp;iPhone входа в&nbsp;Garmin нет: данные Garmin попадают в&nbsp;HealthApp, только если приложение Garmin Connect записывает их&nbsp;в&nbsp;Apple Health, и&nbsp;тогда обрабатываются как данные Apple Health.</li>
+<li><strong>Health Connect</strong> (Android)&nbsp;— типы записей, перечисленные в&nbsp;разделе о&nbsp;Health Connect ниже.</li>
+<li><strong>Apple Health</strong> (iPhone)&nbsp;— типы данных, перечисленные в&nbsp;разделе об&nbsp;Apple Health ниже.</li>
 </ul>
 <p><strong>Записи, которые вы&nbsp;вводите сами.</strong> Вес и&nbsp;состав тела, давление, вода, дневник питания, отметки настроения и&nbsp;симптомы, теги, сессии дыхания и&nbsp;медитации, приём лекарств и&nbsp;добавок, ручные тренировки, цели, цели-события, снаряжение, правила уведомлений, а&nbsp;также ваш профиль и&nbsp;настройки.</p>
 <p><strong>Рассчитанные данные.</strong> Показатели, тренды, серии и&nbsp;рекорды, которые приложение считает на&nbsp;телефоне из&nbsp;перечисленных выше данных. Они вычисляются на&nbsp;устройстве и&nbsp;никогда не&nbsp;загружаются.</p>
@@ -47,10 +50,10 @@
 <p>У&nbsp;приложения нет доступа к&nbsp;геолокации, оно не&nbsp;читает ваши контакты и&nbsp;не&nbsp;использует рекламные идентификаторы.</p></div>
 
 <div class="card"><h2>Где хранятся данные и&nbsp;что&nbsp;покидает устройство</h2>
-<p>На&nbsp;телефоне данные хранятся в&nbsp;локальной базе, зашифрованной SQLCipher. Без&nbsp;аккаунта сетевой обмен идёт только между приложением и&nbsp;сервисами, которые вы&nbsp;подключили (Oura, Garmin).</p>
+<p>На&nbsp;телефоне данные хранятся в&nbsp;локальной базе. На&nbsp;Android она зашифрована SQLCipher; на&nbsp;iPhone файл базы защищён системной защитой данных iOS (Data Protection) и&nbsp;исключён из&nbsp;резервных копий, в&nbsp;том числе из&nbsp;копии iCloud. Без&nbsp;аккаунта сетевой обмен идёт только между приложением и&nbsp;сервисами, которые вы&nbsp;подключили (Oura, а&nbsp;на&nbsp;Android ещё и&nbsp;Garmin).</p>
 <p><strong>Никогда не&nbsp;покидает устройство:</strong></p>
 <ul>
-<li>Все данные Oura, Garmin и&nbsp;Health Connect.</li>
+<li>Все данные Oura, Garmin, Health Connect и&nbsp;Apple Health.</li>
 <li>Все рассчитанные данные: показатели, Body Battery, стресс, нагрузка, тренды, серии и&nbsp;рекорды.</li>
 <li>Токены входа в&nbsp;Oura и&nbsp;Garmin.</li>
 <li>Раскладка экрана «Сегодня», дашборды, привязка снаряжения к&nbsp;тренировкам, режим отдыха и&nbsp;планировщик поездки (джетлаг).</li>
@@ -65,13 +68,13 @@
 <li>Записи с&nbsp;тегами и&nbsp;ваши собственные типы тегов.</li>
 <li>Сессии дыхания и&nbsp;медитации, которые вы&nbsp;запускаете в&nbsp;приложении (метод, плановая и&nbsp;фактическая длительность, циклы, средняя частота дыхания, настроение до&nbsp;и&nbsp;после). В&nbsp;этих сессиях нет значений пульса.</li>
 <li>Записи о&nbsp;лекарствах и&nbsp;добавках (название, доза, побочные эффекты, заметки). Это&nbsp;сведения о&nbsp;здоровье; они синхронизируются, только если вы&nbsp;создали аккаунт и&nbsp;ведёте такие записи.</li>
-<li>Ручные тренировки, которые вы&nbsp;добавляете сами (тип, время, длительность, дистанция, а&nbsp;также средний пульс и&nbsp;оценка усилия, которые вы&nbsp;ввели). Тренировки из&nbsp;Oura, Garmin и&nbsp;Health Connect не&nbsp;синхронизируются, GPS-маршруты не&nbsp;синхронизируются никогда.</li>
+<li>Ручные тренировки, которые вы&nbsp;добавляете сами (тип, время, длительность, дистанция, а&nbsp;также средний пульс и&nbsp;оценка усилия, которые вы&nbsp;ввели). Тренировки из&nbsp;Oura, Garmin, Health Connect и&nbsp;Apple Health не&nbsp;синхронизируются, GPS-маршруты не&nbsp;синхронизируются никогда.</li>
 <li>Цели, цели-события (события и&nbsp;старты, к&nbsp;которым вы&nbsp;готовитесь: название, дата, вид спорта, дистанция, целевое время и&nbsp;заметки), снаряжение (обувь, велосипеды) и&nbsp;правила уведомлений.</li>
 <li>Настройки и&nbsp;поля профиля: единицы измерения, дата рождения, пол, рост, ручные значения пульса, FTP, тихие часы, суточный лимит уведомлений и&nbsp;порядок источников.</li>
 </ul>
 <p>Облако&nbsp;— проект Supabase в&nbsp;ЕС (регион eu-west-3, Париж). Защита на&nbsp;уровне строк (Row Level Security) означает, что&nbsp;каждый аккаунт видит и&nbsp;меняет только свои строки, а&nbsp;данные при&nbsp;передаче шифруются по&nbsp;TLS.</p></div>
 
-<div class="card"><h2>Health Connect</h2>
+<div class="card"><h2>Health Connect (Android)</h2>
 <p>HealthApp читает данные из&nbsp;Health Connect на&nbsp;вашем телефоне Android. Приложение запрашивает только разрешения на&nbsp;чтение и&nbsp;никогда ничего не&nbsp;записывает в&nbsp;Health Connect. Какие разрешения выдать, вы&nbsp;выбираете в&nbsp;диалоге Health Connect.</p>
 <p><strong>Читаемые типы записей:</strong></p>
 <ul>
@@ -92,14 +95,37 @@
 <p><strong>Ограничения использования.</strong> Данные Health Connect обрабатываются только на&nbsp;вашем устройстве. Они не&nbsp;загружаются в&nbsp;облако HealthApp, не&nbsp;передаются и&nbsp;не&nbsp;раскрываются третьим лицам, не&nbsp;используются для&nbsp;рекламы (в&nbsp;том числе персонализированной и&nbsp;основанной на&nbsp;интересах), не&nbsp;продаются и&nbsp;не&nbsp;используются ни&nbsp;для&nbsp;каких целей, кроме описанных здесь функций. Использование и&nbsp;передача информации, полученной из&nbsp;Health Connect, в&nbsp;HealthApp соответствует политике Google Play в&nbsp;отношении пользовательских данных, включая требования ограниченного использования (Limited Use).</p>
 <p><strong>Ваш контроль.</strong> Любое разрешение можно посмотреть и&nbsp;отозвать в&nbsp;любой момент в&nbsp;Health Connect (Настройки, Приложения, HealthApp); чтение прекратится сразу. Чтобы удалить копии, уже хранящиеся в&nbsp;приложении, используйте «Очистить кэш устройств» в&nbsp;разделе «Настройки», «Данные и&nbsp;приватность». Удаление аккаунта HealthApp не&nbsp;затрагивает Health Connect.</p></div>
 
+<div class="card"><h2>Apple Health (iPhone)</h2>
+<p>На&nbsp;iPhone HealthApp читает данные из&nbsp;Apple Health (HealthKit). Приложение запрашивает только доступ на&nbsp;чтение и&nbsp;никогда ничего не&nbsp;записывает в&nbsp;Apple Health. Какие типы данных разрешить, вы&nbsp;выбираете в&nbsp;окне разрешений Apple Health; приложение открывается, а&nbsp;ручные записи работают, даже если не&nbsp;разрешить ничего. Apple не&nbsp;сообщает приложениям, какие типы вы&nbsp;запретили, поэтому приложение не&nbsp;может показать, какие из&nbsp;них выключены.</p>
+<p><strong>Читаемые типы данных:</strong></p>
+<ul>
+<li>Шаги</li>
+<li>Пульс и&nbsp;пульс покоя</li>
+<li>Сон (длительность и&nbsp;фазы)</li>
+<li>Тренировки, с&nbsp;маршрутами, если они есть в&nbsp;Apple Health</li>
+<li>Дистанция (ходьба и&nbsp;бег, велосипед, плавание)</li>
+<li>Активная и&nbsp;базовая энергия</li>
+<li>Пройденные этажи</li>
+<li>Вес, процент жира в&nbsp;теле и&nbsp;рост</li>
+<li>Насыщение крови кислородом (SpO2)</li>
+<li>VO2 max</li>
+<li>Вода</li>
+<li>Питание (энергия, белки, углеводы, жиры, клетчатка, сахар)</li>
+<li>Артериальное давление</li>
+</ul>
+<p>Сюда входят и&nbsp;данные, которые другие приложения записывают в&nbsp;Apple Health, например приложение Garmin Connect.</p>
+<p><strong>Цель.</strong> Данные используются только для&nbsp;того, чтобы показывать их&nbsp;вам и&nbsp;рассчитывать в&nbsp;приложении показатели сна, восстановления, активности и&nbsp;тренировочной нагрузки.</p>
+<p><strong>Ограничения использования.</strong> Данные Apple Health обрабатываются и&nbsp;хранятся только на&nbsp;вашем устройстве. Они не&nbsp;загружаются в&nbsp;облако HealthApp, не&nbsp;хранятся в&nbsp;iCloud (база приложения исключена из&nbsp;резервных копий, а&nbsp;iCloud и&nbsp;CloudKit для&nbsp;данных о&nbsp;здоровье приложение не&nbsp;использует), не&nbsp;раскрываются третьим лицам (в&nbsp;том числе Oura, Garmin и&nbsp;Supabase), не&nbsp;используются для&nbsp;рекламы, аналитики и&nbsp;профилирования, не&nbsp;продаются и&nbsp;не&nbsp;используются ни&nbsp;для&nbsp;каких целей, кроме описанных здесь функций.</p>
+<p><strong>Ваш контроль.</strong> Доступ можно посмотреть и&nbsp;изменить в&nbsp;любой момент в&nbsp;приложении «Здоровье» или в&nbsp;настройках iOS (раздел «Здоровье»); чтение прекратится сразу. Чтобы удалить копии, уже хранящиеся в&nbsp;HealthApp, используйте «Очистить кэш устройств» в&nbsp;разделе «Настройки», «Данные и&nbsp;приватность». Удаление аккаунта HealthApp не&nbsp;затрагивает Apple Health.</p></div>
+
 <div class="card"><h2>Безопасность</h2>
 <ul>
-<li>Локальная база зашифрована SQLCipher. Её&nbsp;ключ защищён Android Keystore.</li>
-<li>Токены Oura и&nbsp;Garmin хранятся в&nbsp;зашифрованном хранилище на&nbsp;основе Android Keystore и&nbsp;не&nbsp;попадают в&nbsp;журналы.</li>
-<li>Автоматическое облачное резервное копирование Android и&nbsp;перенос данных между устройствами для&nbsp;данных приложения отключены.</li>
-<li>Весь сетевой обмен идёт по&nbsp;HTTPS (TLS); незашифрованные соединения заблокированы.</li>
-<li>Вход в&nbsp;Garmin выполняется на&nbsp;собственной странице входа Garmin, показанной внутри приложения. Электронную почту и&nbsp;пароль Garmin вы&nbsp;вводите на&nbsp;этой странице; приложение не&nbsp;читает и&nbsp;не&nbsp;хранит пароль. Сохраняются только полученные токены, в&nbsp;зашифрованном виде. Страница Garmin может хранить собственный файл cookie сессии в&nbsp;закрытом хранилище приложения, пока вы&nbsp;не&nbsp;отключите Garmin.</li>
-<li>Вход в&nbsp;Oura использует OAuth во&nbsp;вкладке браузера; приложение никогда не&nbsp;видит ваш пароль Oura.</li>
+<li>На&nbsp;Android локальная база зашифрована SQLCipher, а&nbsp;её&nbsp;ключ защищён Android Keystore. На&nbsp;iPhone файл базы защищён системной защитой данных iOS (Data Protection) и&nbsp;исключён из&nbsp;резервных копий, в&nbsp;том числе из&nbsp;копии iCloud.</li>
+<li>Токены Oura (а&nbsp;на&nbsp;Android и&nbsp;Garmin) хранятся в&nbsp;зашифрованном хранилище: на&nbsp;Android на&nbsp;основе Android Keystore, на&nbsp;iPhone в&nbsp;связке ключей iOS (Keychain). В&nbsp;журналы они не&nbsp;попадают.</li>
+<li>На&nbsp;Android автоматическое облачное резервное копирование и&nbsp;перенос данных между устройствами для&nbsp;данных приложения отключены.</li>
+<li>Весь сетевой обмен идёт по&nbsp;HTTPS (TLS); на&nbsp;Android незашифрованные соединения заблокированы.</li>
+<li>На&nbsp;Android вход в&nbsp;Garmin выполняется на&nbsp;собственной странице входа Garmin, показанной внутри приложения. Электронную почту и&nbsp;пароль Garmin вы&nbsp;вводите на&nbsp;этой странице; приложение не&nbsp;читает и&nbsp;не&nbsp;хранит пароль. Сохраняются только полученные токены, в&nbsp;зашифрованном виде. Страница Garmin может хранить собственный файл cookie сессии в&nbsp;закрытом хранилище приложения, пока вы&nbsp;не&nbsp;отключите Garmin.</li>
+<li>Вход в&nbsp;Oura использует OAuth во&nbsp;вкладке браузера (на&nbsp;iPhone&nbsp;— в&nbsp;системном веб-окне); приложение никогда не&nbsp;видит ваш пароль Oura.</li>
 <li>В&nbsp;облаке каждая таблица защищена защитой на&nbsp;уровне строк (Row Level Security). В&nbsp;приложении есть только публичный клиентский ключ и&nbsp;нет административных учётных данных; функция удаления аккаунта действует только на&nbsp;аккаунт, чей токен входа она проверила.</li>
 </ul>
 <p>Абсолютно безопасных систем не&nbsp;бывает, но&nbsp;эти меры созданы, чтобы ваши данные о&nbsp;здоровье оставались под&nbsp;вашим контролем.</p></div>
@@ -107,8 +133,9 @@
 <div class="card"><h2>Третьи стороны</h2>
 <ul>
 <li><strong>Oura</strong> (Oura Health Oy)&nbsp;— приложение подключается к&nbsp;API Oura от&nbsp;вашего имени после вашего разрешения. К&nbsp;вашему аккаунту Oura применяется <a href="https://ouraring.com/privacy-policy">политика конфиденциальности</a> Oura.</li>
-<li><strong>Garmin</strong> (Garmin Ltd.)&nbsp;— приложение читает ваши данные из&nbsp;Garmin Connect после входа. К&nbsp;вашему аккаунту Garmin применяется <a href="https://www.garmin.com/en-US/privacy/global/">политика конфиденциальности</a> Garmin.</li>
+<li><strong>Garmin</strong> (Garmin Ltd.)&nbsp;— на&nbsp;Android приложение читает ваши данные из&nbsp;Garmin Connect после входа. На&nbsp;iPhone приложение не&nbsp;обращается к&nbsp;серверам Garmin: данные Garmin приходят только через Apple Health. К&nbsp;вашему аккаунту Garmin применяется <a href="https://www.garmin.com/en-US/privacy/global/">политика конфиденциальности</a> Garmin.</li>
 <li><strong>Google Health Connect</strong>&nbsp;— данные читаются на&nbsp;вашем устройстве из&nbsp;сервиса Health Connect, встроенного в&nbsp;Android. HealthApp не&nbsp;отправляет их&nbsp;в&nbsp;Google. К&nbsp;самому Health Connect применяется <a href="https://policies.google.com/privacy">политика конфиденциальности</a> Google.</li>
+<li><strong>Apple Health</strong> (Apple Inc.)&nbsp;— на&nbsp;iPhone данные читаются на&nbsp;вашем устройстве из&nbsp;Apple Health, встроенного в&nbsp;iOS. HealthApp не&nbsp;отправляет их&nbsp;в&nbsp;Apple. К&nbsp;самому Apple Health применяется <a href="https://www.apple.com/legal/privacy/">политика конфиденциальности</a> Apple.</li>
 <li><strong>Supabase</strong>&nbsp;— размещает необязательную облачную базу и&nbsp;систему аккаунтов (регион ЕС, Париж) как&nbsp;обработчик данных HealthApp на&nbsp;условиях своей <a href="https://supabase.com/privacy">политики конфиденциальности</a>. Самостоятельно ваши данные он не&nbsp;использует.</li>
 <li><strong>Resend</strong>&nbsp;— доставляет письма с&nbsp;кодом входа для&nbsp;необязательных аккаунтов. Он получает только ваш адрес электронной почты и&nbsp;письмо с&nbsp;кодом, на&nbsp;условиях своей <a href="https://resend.com/legal/privacy-policy">политики конфиденциальности</a>.</li>
 </ul>
@@ -119,7 +146,7 @@
 <li><strong>На&nbsp;телефоне</strong> данные хранятся, пока вы&nbsp;их&nbsp;не&nbsp;удалите или&nbsp;не&nbsp;удалите приложение. Удаление приложения стирает всё, что&nbsp;оно сохранило на&nbsp;устройстве.</li>
 <li><strong>Удалить все мои данные</strong> («Удалить все мои данные» в&nbsp;разделе «Настройки», «Данные и&nbsp;приватность») удаляет записи, хранящиеся на&nbsp;устройстве, а&nbsp;пока привязан аккаунт&nbsp;— и&nbsp;копию в&nbsp;облаке.</li>
 <li><strong>Удалить аккаунт</strong> («Удалить аккаунт» в&nbsp;разделе «Аккаунт и&nbsp;облако») сразу удаляет ваш логин и&nbsp;все ваши облачные записи. Удаление можно также запросить по&nbsp;электронной почте. Подробные шаги&nbsp;— на&nbsp;странице <a href="delete-account.ru.html">«Удаление аккаунта и&nbsp;данных»</a>.</li>
-<li><strong>Отключение</strong> Oura или&nbsp;Garmin в&nbsp;разделе «Настройки», «Устройства и&nbsp;источники» удаляет сохранённые токены. Чтобы дополнительно отозвать доступ на&nbsp;стороне сервиса, воспользуйтесь настройками аккаунта Oura или&nbsp;Garmin. Разрешения Health Connect отзываются в&nbsp;самом Health Connect.</li>
+<li><strong>Отключение</strong> Oura или&nbsp;Garmin в&nbsp;разделе «Настройки», «Устройства и&nbsp;источники» удаляет сохранённые токены. Чтобы дополнительно отозвать доступ на&nbsp;стороне сервиса, воспользуйтесь настройками аккаунта Oura или&nbsp;Garmin. Разрешения Health Connect отзываются в&nbsp;самом Health Connect, а&nbsp;доступ к&nbsp;Apple Health&nbsp;— в&nbsp;приложении «Здоровье» или в&nbsp;настройках iOS.</li>
 <li><strong>Маркеры удаления.</strong> Когда вы&nbsp;удаляете синхронизированную запись, в&nbsp;облаке остаётся небольшой маркер (название таблицы и&nbsp;идентификатор записи, без&nbsp;содержимого), чтобы удаление дошло и&nbsp;до&nbsp;других ваших устройств. Ежедневное задание стирает маркеры через 180&nbsp;дней; при&nbsp;удалении аккаунта они удаляются сразу.</li>
 <li><strong>Копии у&nbsp;поставщиков.</strong> Supabase может хранить резервные копии инфраструктуры ограниченное время по&nbsp;собственной политике, а&nbsp;Resend хранит журналы доставки писем с&nbsp;кодом по&nbsp;собственной политике.</li>
 </ul></div>
@@ -137,7 +164,7 @@
 <div class="card"><h2>Контакты</h2>
 <p>Эдуард Мартыненко, разработчик HealthApp<br><a href="mailto:martynenkoeduard1@gmail.com">martynenkoeduard1@gmail.com</a></p></div>
 </main>
-<footer><span>© 2026 HealthApp</span><span>Не связано с Oura Health Oy, Garmin Ltd. и Google LLC.</span><p class="links"><a href="privacy.ru.html">Приватность</a> · <a href="terms.ru.html">Условия</a> · <a href="delete-account.ru.html">Удаление аккаунта</a></p></footer>
+<footer><span>© 2026 HealthApp</span><span>Не связано с Oura Health Oy, Garmin Ltd., Google LLC и Apple Inc.</span><p class="links"><a href="privacy.ru.html">Приватность</a> · <a href="terms.ru.html">Условия</a> · <a href="delete-account.ru.html">Удаление аккаунта</a></p></footer>
 </div>
 </body>
 </html>

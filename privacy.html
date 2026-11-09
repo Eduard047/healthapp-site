@@ -5,10 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#070b10">
 <title>Privacy Policy – HealthApp</title>
-<meta name="description" content="How HealthApp handles your data: what stays on your phone, what is optionally synced, and how to delete it.">
+<meta name="description" content="How HealthApp handles your data on Android and iPhone: what stays on your phone, what is optionally synced, and how to delete it.">
 <link rel="alternate" hreflang="en" href="privacy.html">
 <link rel="alternate" hreflang="ru" href="privacy.ru.html">
-<link rel="stylesheet" href="style.css?v=6">
+<link rel="alternate" hreflang="uk" href="privacy.uk.html">
+<link rel="stylesheet" href="style.css?v=7">
 </head>
 <body>
 <div class="wrap">
@@ -20,16 +21,17 @@
     <a href="terms.html">Terms</a>
     <a href="delete-account.html">Delete account</a>
   </nav>
-  <div class="lang" role="group" aria-label="Language"><span lang="en" aria-current="true">EN</span><a href="privacy.ru.html" lang="ru" hreflang="ru" title="Русская версия">RU</a></div>
+  <div class="lang" role="group" aria-label="Language"><span lang="en" aria-current="true">EN</span><a href="privacy.ru.html" lang="ru" hreflang="ru" title="Русская версия">RU</a><a href="privacy.uk.html" lang="uk" hreflang="uk" title="Українська версія">UK</a></div>
 </header>
 <main>
 <div class="page-head"><h1>Privacy Policy</h1>
-<p class="muted">Last updated: 31 October 2026</p></div>
+<p class="muted">Last updated: 9 November 2026</p></div>
 
 <div class="card"><h2>Summary</h2>
-<p>HealthApp is an Android app by Eduard Martynenko (sole developer, the data controller) that shows data from your Oura Ring, your Garmin watch and Health Connect in one recovery dashboard.</p>
+<p>HealthApp is an app for Android and iPhone by Eduard Martynenko (sole developer, the data controller) that shows data from your Oura Ring, your Garmin watch, Health Connect (Android) and Apple Health (iPhone) in one recovery dashboard.</p>
 <ul>
-<li><strong>Device data stays on your phone.</strong> Data from Oura, Garmin and Health Connect, and every score the app computes from it (recovery, Body Battery, stress and so on), is never uploaded to HealthApp or to any other server.</li>
+<li><strong>Device data stays on your phone.</strong> Data from Oura, Garmin, Health Connect and Apple Health, and every score the app computes from it (recovery, Body Battery, stress and so on), is never uploaded to HealthApp or to any other server.</li>
+<li><strong>Apple Health is read-only.</strong> On iPhone, HealthApp only reads from Apple Health and never writes to it. Apple Health data is not sent to the cloud, not stored in iCloud, not shared with third parties and not used for advertising.</li>
 <li><strong>Cloud sync is optional and narrow.</strong> Only if you create an account, the entries you type yourself (listed below) are backed up to your private cloud account.</li>
 <li><strong>No advertising, no analytics, no crash-reporting services, no sale of data.</strong></li>
 </ul></div>
@@ -38,8 +40,9 @@
 <p><strong>Device and service data.</strong> Read-only, from the services you connect, and kept in the app's local database on your phone:</p>
 <ul>
 <li><strong>Oura</strong> – sleep, readiness, activity, heart rate and heart rate variability, SpO2, stress, resilience, workouts, sessions, tags, ring battery and basic profile details (age, height, weight, sex), read through the official Oura API after you sign in to your Oura account.</li>
-<li><strong>Garmin</strong> – daily summaries (steps, floors, calories, distance), heart rate, training status and load, VO2 max, activities with their routes, hydration, weight and device status, read from Garmin Connect after you sign in to your Garmin account.</li>
-<li><strong>Health Connect</strong> – the record types listed in the Health Connect section below.</li>
+<li><strong>Garmin</strong> – on Android: daily summaries (steps, floors, calories, distance), heart rate, training status and load, VO2 max, activities with their routes, hydration, weight and device status, read from Garmin Connect after you sign in to your Garmin account. On iPhone there is no Garmin sign-in: Garmin data reaches HealthApp only if the Garmin Connect app writes it to Apple Health, and it is then handled as Apple Health data.</li>
+<li><strong>Health Connect</strong> (Android) – the record types listed in the Health Connect section below.</li>
+<li><strong>Apple Health</strong> (iPhone) – the data types listed in the Apple Health section below.</li>
 </ul>
 <p><strong>Records you enter yourself.</strong> Weight and body composition, blood pressure, water, food diary, mood check-ins and symptoms, tags, breathing and meditation sessions, medication and supplement intakes, manual workouts, goals, event goals, gear, notification rules, and your profile and settings.</p>
 <p><strong>Computed data.</strong> Scores, trends, streaks and records that the app calculates on your phone from the data above. They are derived on the device and are never uploaded.</p>
@@ -47,10 +50,10 @@
 <p>The app has no location permission, does not read your contacts and does not use advertising identifiers.</p></div>
 
 <div class="card"><h2>Where data is stored and what leaves the device</h2>
-<p>On your phone, data is kept in a local database encrypted with SQLCipher. Without an account, the only network traffic is between the app and the services you connect (Oura, Garmin).</p>
+<p>On your phone, data is kept in a local database. On Android it is encrypted with SQLCipher; on iPhone the database file is protected by iOS Data Protection and excluded from backups, including iCloud backup. Without an account, the only network traffic is between the app and the services you connect (Oura, and Garmin on Android).</p>
 <p><strong>Never leaves your device:</strong></p>
 <ul>
-<li>All data from Oura, Garmin and Health Connect.</li>
+<li>All data from Oura, Garmin, Health Connect and Apple Health.</li>
 <li>All computed data: scores, Body Battery, stress, training load, trends, streaks and records.</li>
 <li>Your Oura and Garmin sign-in tokens.</li>
 <li>Your Today screen layout, dashboards, the assignment of gear to workouts, rest mode and the jet-lag trip planner.</li>
@@ -65,13 +68,13 @@
 <li>Tag entries and your custom tag types.</li>
 <li>Breathing and meditation sessions you run in the app (pattern, planned and actual duration, cycles, average breathing rate, mood before and after). These sessions contain no heart-rate values.</li>
 <li>Medication and supplement entries (name, dose, side effects, notes). This is health information; it is synced only if you create an account and log such entries.</li>
-<li>Manual workouts you add yourself (type, time, duration, distance, and the average heart rate and effort rating you typed in). Workouts that come from Oura, Garmin or Health Connect are not synced, and GPS routes are never synced.</li>
+<li>Manual workouts you add yourself (type, time, duration, distance, and the average heart rate and effort rating you typed in). Workouts that come from Oura, Garmin, Health Connect or Apple Health are not synced, and GPS routes are never synced.</li>
 <li>Goals, event goals (events and races you train for: name, date, sport, distance, target time and notes), gear (shoes, bikes) and notification rules.</li>
 <li>Settings and profile fields: units, birth date, sex, height, heart-rate overrides, FTP, quiet hours, daily notification limit and source order.</li>
 </ul>
 <p>The cloud is a Supabase project in the EU (region eu-west-3, Paris). Row Level Security means each account can read and change only its own rows, and data is encrypted in transit with TLS.</p></div>
 
-<div class="card"><h2>Health Connect</h2>
+<div class="card"><h2>Health Connect (Android)</h2>
 <p>HealthApp reads data from Health Connect on your Android phone. It requests read permissions only and never writes to Health Connect. You choose which permissions to grant in the Health Connect dialog.</p>
 <p><strong>Record types read:</strong></p>
 <ul>
@@ -92,14 +95,37 @@
 <p><strong>Limits on use.</strong> Health Connect data is processed on your device only. It is not uploaded to HealthApp's cloud, not transferred or disclosed to any third party, not used for advertising (including personalised or interest-based ads), not sold, and not used for any purpose other than the features described here. HealthApp's use and transfer of information received from Health Connect adheres to the Google Play User Data policy, including the Limited Use requirements.</p>
 <p><strong>Your control.</strong> You can review and revoke any permission at any time in Health Connect (Settings, Apps, HealthApp), and reads stop at once. To remove copies already held by the app, use <span lang="ru">«Очистить кэш устройств»</span> (Clear device cache) in Settings, <span lang="ru">«Данные и приватность»</span> (Data and privacy). Deleting your HealthApp account does not touch Health Connect.</p></div>
 
+<div class="card"><h2>Apple Health (iPhone)</h2>
+<p>On iPhone, HealthApp reads data from Apple Health (HealthKit). It requests read access only and never writes to Apple Health. You choose which data types to allow in the Apple Health permission sheet, and the app opens and the manual logs work even if you allow none. Apple does not tell apps which types you declined, so the app cannot show which of them are off.</p>
+<p><strong>Data types read:</strong></p>
+<ul>
+<li>Steps</li>
+<li>Heart rate and resting heart rate</li>
+<li>Sleep (duration and stages)</li>
+<li>Workouts, with their routes where Apple Health holds them</li>
+<li>Distance (walking and running, cycling, swimming)</li>
+<li>Active and resting energy</li>
+<li>Floors climbed</li>
+<li>Weight, body fat and height</li>
+<li>Blood oxygen (SpO2)</li>
+<li>VO2 max</li>
+<li>Water</li>
+<li>Nutrition (energy, protein, carbohydrates, fat, fibre, sugar)</li>
+<li>Blood pressure</li>
+</ul>
+<p>This includes data that other apps write to Apple Health, for example from the Garmin Connect app.</p>
+<p><strong>Purpose.</strong> The data is used only to show it to you and to compute sleep, recovery, activity and training-load figures inside the app.</p>
+<p><strong>Limits on use.</strong> Apple Health data is processed and kept on your device only. It is not uploaded to HealthApp's cloud, not stored in iCloud (the app's database is excluded from backups, and the app does not use iCloud or CloudKit for health data), not disclosed to any third party (including Oura, Garmin and Supabase), not used for advertising, analytics or profiling, not sold, and not used for any purpose other than the features described here.</p>
+<p><strong>Your control.</strong> You can review and change access at any time in the Health app or in the iOS Settings app (Health, Data Access &amp; Devices), and reads stop at once. To remove copies already held by HealthApp, use <span lang="ru">«Очистить кэш устройств»</span> (Clear device cache) in Settings, <span lang="ru">«Данные и приватность»</span> (Data and privacy). Deleting your HealthApp account does not touch Apple Health.</p></div>
+
 <div class="card"><h2>Security</h2>
 <ul>
-<li>The local database is encrypted with SQLCipher. Its key is protected by the Android Keystore.</li>
-<li>Oura and Garmin tokens are kept in an encrypted vault backed by the Android Keystore, and are never written to logs.</li>
-<li>Android's automatic cloud backup and device-to-device transfer are turned off for the app's data.</li>
-<li>All network traffic uses HTTPS (TLS); unencrypted connections are blocked.</li>
-<li>Garmin sign-in happens on Garmin's own sign-in page shown inside the app. You type your Garmin email and password into that page; the app does not read or store the password. Only the resulting tokens are stored, encrypted. Garmin's page may keep its own session cookie in the app's private storage until you disconnect Garmin.</li>
-<li>Oura sign-in uses OAuth in a browser tab; the app never sees your Oura password.</li>
+<li>On Android the local database is encrypted with SQLCipher, and its key is protected by the Android Keystore. On iPhone the database file is protected by iOS Data Protection and excluded from backups, including iCloud backup.</li>
+<li>Oura tokens (and Garmin tokens on Android) are kept in an encrypted vault: backed by the Android Keystore on Android, and in the iOS Keychain on iPhone. They are never written to logs.</li>
+<li>On Android, automatic cloud backup and device-to-device transfer are turned off for the app's data.</li>
+<li>All network traffic uses HTTPS (TLS); on Android, unencrypted connections are blocked.</li>
+<li>On Android, Garmin sign-in happens on Garmin's own sign-in page shown inside the app. You type your Garmin email and password into that page; the app does not read or store the password. Only the resulting tokens are stored, encrypted. Garmin's page may keep its own session cookie in the app's private storage until you disconnect Garmin.</li>
+<li>Oura sign-in uses OAuth in a browser tab (a system web sheet on iPhone); the app never sees your Oura password.</li>
 <li>In the cloud, every table is protected by Row Level Security. The app holds only a public client key and no administrative credentials; the account-deletion function acts only on the account of the verified sign-in token.</li>
 </ul>
 <p>No system is perfectly secure, but these measures are designed to keep your health data under your control.</p></div>
@@ -107,8 +133,9 @@
 <div class="card"><h2>Third parties</h2>
 <ul>
 <li><strong>Oura</strong> (Oura Health Oy) – the app connects to the Oura API on your behalf after you authorise it. Oura's <a href="https://ouraring.com/privacy-policy">privacy policy</a> applies to your Oura account.</li>
-<li><strong>Garmin</strong> (Garmin Ltd.) – the app reads your data from Garmin Connect after you sign in. Garmin's <a href="https://www.garmin.com/en-US/privacy/global/">privacy policy</a> applies to your Garmin account.</li>
+<li><strong>Garmin</strong> (Garmin Ltd.) – on Android the app reads your data from Garmin Connect after you sign in. On iPhone the app has no connection to Garmin's servers: Garmin data arrives only through Apple Health. Garmin's <a href="https://www.garmin.com/en-US/privacy/global/">privacy policy</a> applies to your Garmin account.</li>
 <li><strong>Google Health Connect</strong> – data is read on your device from the Health Connect service built into Android. It is not sent to Google by HealthApp. Google's <a href="https://policies.google.com/privacy">privacy policy</a> applies to Health Connect itself.</li>
+<li><strong>Apple Health</strong> (Apple Inc.) – on iPhone, data is read on your device from Apple Health, which is built into iOS. It is not sent to Apple by HealthApp. Apple's <a href="https://www.apple.com/legal/privacy/">privacy policy</a> applies to Apple Health itself.</li>
 <li><strong>Supabase</strong> – hosts the optional cloud database and account system (EU region, Paris) as HealthApp's processor, under its <a href="https://supabase.com/privacy">privacy policy</a>. It has no independent use of your data.</li>
 <li><strong>Resend</strong> – delivers the sign-in code emails for optional accounts. It receives only your email address and the message containing the code, under its <a href="https://resend.com/legal/privacy-policy">privacy policy</a>.</li>
 </ul>
@@ -119,7 +146,7 @@
 <li><strong>On your phone</strong> data is kept until you delete it or uninstall the app. Uninstalling removes everything the app stored on the device.</li>
 <li><strong>Delete all my data</strong> (<span lang="ru">«Удалить все мои данные»</span> in Settings, <span lang="ru">«Данные и приватность»</span>) deletes the entries stored on the device and, while an account is linked, the cloud copy as well.</li>
 <li><strong>Delete account</strong> (<span lang="ru">«Удалить аккаунт»</span> in Account and cloud sync) deletes your login and all your cloud rows at once. You can also request deletion by email. Full steps are on the <a href="delete-account.html">Delete your account and data</a> page.</li>
-<li><strong>Disconnecting</strong> Oura or Garmin in Settings, <span lang="ru">«Устройства и источники»</span> (Devices and sources) deletes the stored tokens. To also revoke access on the provider's side, use your Oura or Garmin account settings. Health Connect permissions are revoked in Health Connect.</li>
+<li><strong>Disconnecting</strong> Oura or Garmin in Settings, <span lang="ru">«Устройства и источники»</span> (Devices and sources) deletes the stored tokens. To also revoke access on the provider's side, use your Oura or Garmin account settings. Health Connect permissions are revoked in Health Connect, and Apple Health access in the Health app or in iOS Settings.</li>
 <li><strong>Deletion markers.</strong> When you delete a synced entry, the cloud keeps a small marker (table name and entry ID, no content) so your other devices delete it too. A daily job purges markers after 180&nbsp;days; account deletion removes them immediately.</li>
 <li><strong>Provider copies.</strong> Supabase may keep infrastructure backups for a limited time under its own policy, and Resend keeps delivery records of sign-in emails under its own policy.</li>
 </ul></div>
@@ -137,7 +164,7 @@
 <div class="card"><h2>Contact</h2>
 <p>Eduard Martynenko, developer of HealthApp<br><a href="mailto:martynenkoeduard1@gmail.com">martynenkoeduard1@gmail.com</a></p></div>
 </main>
-<footer><span>© 2026 HealthApp</span><span>Not affiliated with Oura Health Oy, Garmin Ltd. or Google LLC.</span><p class="links"><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="delete-account.html">Delete account</a></p></footer>
+<footer><span>© 2026 HealthApp</span><span>Not affiliated with Oura Health Oy, Garmin Ltd., Google LLC or Apple Inc.</span><p class="links"><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="delete-account.html">Delete account</a></p></footer>
 </div>
 </body>
 </html>
